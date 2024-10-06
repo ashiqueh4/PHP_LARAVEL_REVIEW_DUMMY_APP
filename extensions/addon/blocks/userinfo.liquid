@@ -1,0 +1,17 @@
+<div class="form_app_Ex_wrapper">
+    <div class="form_t"><h1>{{ block.settings.text_i }}</h1></div>
+    {% render 'userinfo_s' %}
+</div>
+{% schema %}
+{
+  "name": "user info",
+  "target": "section",
+  "stylesheet": "appphp.css",
+  "javascript": "appphp.js",
+  "settings": [
+    { "type": "text", "id": "text_i", "label": "Inquery Form", "default": "Inquery Form" },
+    { "type": "color", "id": "colour", "label": "Star Colour", "default": "#ff0000" }
+  ]
+}
+{% endschema %}
+

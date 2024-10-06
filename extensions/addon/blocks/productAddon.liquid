@@ -1,0 +1,21 @@
+<div class="productAddon_app_Ex_wrapper" id="productAddon_app_Ex_wrapper" style="background-color: {{ block.settings.colour }};padding: 10px;display:none;">
+    <div class="form_t"><h1>{{ block.settings.text_i }}</h1></div>
+    {% render 'productAddons' %}
+</div>
+{% schema %}
+{
+  "name": "Product Addons",
+  "target": "section",
+  "enabled_on": {
+      "templates": ["product"]
+    },
+  "stylesheet": "paddoncss.css",
+  "javascript": "paddonjs.js",
+  "settings": [
+    { "type": "text", "id": "text_i", "label": "Product Addons", "default": "Product Addons" },
+    { "type": "color", "id": "colour", "label": "background Colour", "default": "#f1f1f1" },
+    { "type": "color", "id": "colour1", "label": "background Colour item", "default": "#ffffff" }
+  ]
+}
+{% endschema %}
+

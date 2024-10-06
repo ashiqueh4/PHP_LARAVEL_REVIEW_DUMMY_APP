@@ -1,0 +1,25 @@
+#addoncreate_form input,#addoncreate_form select {
+    width: 100%;
+    padding: 5px;
+}
+#adding_processing_div {
+    text-align: center;
+}
+#adding_processing_div img {
+    width: 100px;
+}
+.addonAdded-success{
+    color: green;
+}
+.addonAdded-error{
+    color: red;
+}
+.addonAdded-inputs {
+    color: red;
+}
+#adding_processing_divlist {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

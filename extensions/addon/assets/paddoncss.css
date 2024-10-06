@@ -1,0 +1,11 @@
+.phpapp_pa {
+    background: #fff;
+    padding: 10px;
+}
+.phpapp_pa h3, .phpapp_pa h2 {
+    margin: 0px;
+    padding: 3px 0 3px 0;
+}
+.dactive {
+    pointer-events: none;
+}

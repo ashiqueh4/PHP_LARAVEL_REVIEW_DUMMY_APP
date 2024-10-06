@@ -1,0 +1,37 @@
+#app_ext_form_inner {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#app_ext_form_inner input {
+    padding: 10px;
+}
+#app_ext_form_inner #btnfid {
+    width: 125px;
+    padding: 9px;
+    background: green;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+.form_app_Ex_wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+#store_feedback {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    padding-top: 10px;
+}
+.phpapp_b {
+    padding: 15px;
+    background: #c1c1c1;
+}
+@media (min-width: 600px) {
+    #store_feedback { grid-template-columns: repeat(2, 1fr); }
+  }
+@media (min-width: 900px) {
+#store_feedback { grid-template-columns: repeat(3, 1fr); }
+}
