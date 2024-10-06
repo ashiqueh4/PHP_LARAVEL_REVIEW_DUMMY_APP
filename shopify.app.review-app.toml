@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "09ed3b3ed4a74fb195aa6c5481ca52bf"
+name = "review app"
+handle = "review-app-146"
+application_url = "https://mw-victor-panama-wealth.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "kudlyhoodie.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_draft_orders,read_orders,write_draft_orders,write_orders,write_products"
+
+[auth]
+redirect_urls = [
+  "https://mw-victor-panama-wealth.trycloudflare.com/auth/callback",
+  "https://mw-victor-panama-wealth.trycloudflare.com/auth/shopify/callback",
+  "https://mw-victor-panama-wealth.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-10"
+
+[pos]
+embedded = false

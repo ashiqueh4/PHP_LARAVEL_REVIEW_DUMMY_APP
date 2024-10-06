@@ -39,14 +39,14 @@ const cartprice= async()=>{
 const cartsub=async()=>{
   let final_price=await cartprice();
    const sub_t_p=final_price.reduce((a, b) => a + b, 0);
-   const st_value= document.querySelector(".totals__subtotal-value").innerHTML;
+   const st_value= document.querySelector(".totals__total-value").innerHTML;
        const str_c = st_value;
         const regex = /^([^\d]+)([\d,]+(?:\.\d+)?)$/;
         const match = str_c.match(regex);
         if (match) {
           const currency = match[1]; 
           const subt_price=`${currency}${parseFloat(sub_t_p).toFixed(2)}`;
-          const nodeList = document.querySelectorAll(".totals__subtotal-value");
+          const nodeList = document.querySelectorAll(".totals__total-value");
             for (let i = 0; i < nodeList.length; i++) {
               nodeList[i].innerHTML = subt_price;
             }
