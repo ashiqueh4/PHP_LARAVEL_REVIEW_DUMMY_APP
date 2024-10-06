@@ -153,7 +153,7 @@ document.querySelector('#checkout').addEventListener("click", async function(eve
         }
         return response.json();
     })
-    .then(data => { 
+    .then(data => {  
         // Handle the response data here
         console.log('Success:', data.checkout_url);
         window.location.replace(data.checkout_url);
