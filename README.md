@@ -315,4 +315,4 @@ pnpm dev --tunnel-url https://randomly-generated-hostname.trycloudflare.com:3000
 app poxy sub :inter
 https://mw-victor-panama-wealth.trycloudflare.com/storedata
 
-to access order active inside your app
+to access order active inside your app and it will only work on dawn theme
